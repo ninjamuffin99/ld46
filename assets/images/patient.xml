@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="patient.png">
+	<!-- Created with Adobe Animate version 19.2.0.405 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Symbol 20000" x="0" y="0" width="291" height="343"/>
+	<SubTexture name="Symbol 20001" x="0" y="0" width="291" height="343"/>
+	<SubTexture name="Symbol 20002" x="0" y="0" width="291" height="343"/>
+	<SubTexture name="Symbol 20003" x="291" y="0" width="291" height="343"/>
+	<SubTexture name="Symbol 20004" x="291" y="0" width="291" height="343"/>
+	<SubTexture name="Symbol 20005" x="291" y="0" width="291" height="343"/>
+	<SubTexture name="Symbol 20006" x="582" y="0" width="291" height="343"/>
+	<SubTexture name="Symbol 20007" x="582" y="0" width="291" height="343"/>
+	<SubTexture name="Symbol 20008" x="582" y="0" width="291" height="343"/>
+	<SubTexture name="dying0000" x="0" y="343" width="291" height="351"/>
+	<SubTexture name="dying0001" x="0" y="343" width="291" height="351"/>
+	<SubTexture name="dying0002" x="0" y="343" width="291" height="351"/>
+	<SubTexture name="dying0003" x="291" y="343" width="291" height="351"/>
+	<SubTexture name="dying0004" x="291" y="343" width="291" height="351"/>
+	<SubTexture name="dying0005" x="291" y="343" width="291" height="351"/>
+	<SubTexture name="dying0006" x="582" y="343" width="291" height="351"/>
+	<SubTexture name="dying0007" x="582" y="343" width="291" height="351"/>
+	<SubTexture name="dying0008" x="582" y="343" width="291" height="351"/>
+	<SubTexture name="idle patient 0000" x="0" y="694" width="291" height="351"/>
+	<SubTexture name="idle patient 0001" x="0" y="694" width="291" height="351"/>
+	<SubTexture name="idle patient 0002" x="0" y="694" width="291" height="351"/>
+	<SubTexture name="idle patient 0003" x="291" y="694" width="291" height="351"/>
+	<SubTexture name="idle patient 0004" x="291" y="694" width="291" height="351"/>
+	<SubTexture name="idle patient 0005" x="291" y="694" width="291" height="351"/>
+	<SubTexture name="idle patient 0006" x="582" y="694" width="291" height="351"/>
+	<SubTexture name="idle patient 0007" x="582" y="694" width="291" height="351"/>
+	<SubTexture name="idle patient 0008" x="582" y="694" width="291" height="351"/>
+</TextureAtlas>

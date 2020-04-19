@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="water.png">
+	<!-- Created with Adobe Animate version 19.2.0.405 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="empty glass0000" x="0" y="0" width="80" height="93"/>
+	<SubTexture name="empty glass0001" x="0" y="0" width="80" height="93"/>
+	<SubTexture name="empty glass0002" x="0" y="0" width="80" height="93"/>
+	<SubTexture name="empty glass0003" x="80" y="0" width="80" height="93"/>
+	<SubTexture name="empty glass0004" x="80" y="0" width="80" height="93"/>
+	<SubTexture name="empty glass0005" x="80" y="0" width="80" height="93"/>
+	<SubTexture name="empty glass0006" x="160" y="0" width="79" height="92" frameX="-1" frameY="-1" frameWidth="80" frameHeight="93"/>
+	<SubTexture name="empty glass0007" x="160" y="0" width="79" height="92" frameX="-1" frameY="-1" frameWidth="80" frameHeight="93"/>
+	<SubTexture name="empty glass0008" x="160" y="0" width="79" height="92" frameX="-1" frameY="-1" frameWidth="80" frameHeight="93"/>
+	<SubTexture name="full glass0000" x="0" y="93" width="82" height="95"/>
+	<SubTexture name="full glass0001" x="0" y="93" width="82" height="95"/>
+	<SubTexture name="full glass0002" x="0" y="93" width="82" height="95"/>
+	<SubTexture name="full glass0003" x="82" y="93" width="82" height="95"/>
+	<SubTexture name="full glass0004" x="82" y="93" width="82" height="95"/>
+	<SubTexture name="full glass0005" x="82" y="93" width="82" height="95"/>
+	<SubTexture name="full glass0006" x="164" y="93" width="82" height="95"/>
+	<SubTexture name="full glass0007" x="164" y="93" width="82" height="95"/>
+	<SubTexture name="full glass0008" x="164" y="93" width="82" height="95"/>
+</TextureAtlas>

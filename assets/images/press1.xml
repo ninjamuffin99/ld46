@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="press1.png">
+	<!-- Created with Adobe Animate version 19.2.0.405 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ui_press10000" x="0" y="0" width="332" height="128" frameX="0" frameY="0" frameWidth="332" frameHeight="130"/>
+	<SubTexture name="ui_press10001" x="0" y="0" width="332" height="128" frameX="0" frameY="0" frameWidth="332" frameHeight="130"/>
+	<SubTexture name="ui_press10002" x="0" y="128" width="328" height="128" frameX="-2" frameY="0" frameWidth="332" frameHeight="130"/>
+	<SubTexture name="ui_press10003" x="0" y="128" width="328" height="128" frameX="-2" frameY="0" frameWidth="332" frameHeight="130"/>
+	<SubTexture name="ui_press10004" x="0" y="256" width="324" height="130" frameX="-4" frameY="0" frameWidth="332" frameHeight="130"/>
+	<SubTexture name="ui_press10005" x="0" y="256" width="324" height="130" frameX="-4" frameY="0" frameWidth="332" frameHeight="130"/>
+</TextureAtlas>

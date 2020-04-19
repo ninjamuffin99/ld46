@@ -1,5 +1,6 @@
 package;
 
+import flixel.math.FlxPoint;
 import flixel.FlxObject;
 import flixel.FlxG;
 import flixel.FlxState;
@@ -9,6 +10,7 @@ class PlayState extends FlxState
 {
 	private var bg:FlxSprite;
 	private var camFollow:FlxObject;
+	public static var wholeSize:FlxPoint = FlxPoint.get();
 	override public function create():Void
 	{
 		bg = new FlxSprite().loadGraphic(AssetPaths.hospital_ward_vector__png);
@@ -17,6 +19,8 @@ class PlayState extends FlxState
 		bg.antialiasing = true;
 		add(bg);
 
+		wholeSize.set(bg.width, bg.height);
+
 		camFollow = new FlxObject(0, 0, 2, 2);
 		camFollow.screenCenter();
 		add(camFollow);
@@ -24,9 +28,12 @@ class PlayState extends FlxState
 		var flower:Flower = new Flower(1100, 350);
 		add(flower);
 
+		var water:Water = new Water(900, 350);
+		add(water);
+
 		FlxG.camera.follow(camFollow);
 
-		// FlxG.mouse.load("assets/images/cursor_idle.png");
+		FlxG.mouse.load("assets/images/cursor_idle.png");
 
 		super.create();
 	}
@@ -45,11 +52,11 @@ class PlayState extends FlxState
 
 		var camSpeed:Float = 300;
 
-		if (FlxG.mouse.screenX >= FlxG.width * 0.66 && camFollow.x < bg.width - (FlxG.width * 0.5))
+		if (FlxG.mouse.screenX >= FlxG.width * 0.8 && camFollow.x < bg.width - (FlxG.width * 0.5))
 		{
 			camFollow.velocity.x = camSpeed;
 		}
-		else if (FlxG.mouse.screenX <= FlxG.width * 0.33 && camFollow.x > FlxG.width * 0.5)
+		else if (FlxG.mouse.screenX <= FlxG.width * 0.2 && camFollow.x > FlxG.width * 0.5)
 		{
 			camFollow.velocity.x = -camSpeed;
 		}

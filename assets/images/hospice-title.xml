@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="hospice-title.png">
+	<!-- Created with Adobe Animate version 19.2.0.405 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="menu_title0000" x="0" y="0" width="122" height="192" frameX="-2" frameY="0" frameWidth="124" frameHeight="192"/>
+	<SubTexture name="menu_title0001" x="0" y="0" width="122" height="192" frameX="-2" frameY="0" frameWidth="124" frameHeight="192"/>
+	<SubTexture name="menu_title0002" x="122" y="0" width="124" height="192"/>
+	<SubTexture name="menu_title0003" x="122" y="0" width="124" height="192"/>
+	<SubTexture name="menu_title0004" x="0" y="192" width="122" height="190" frameX="-2" frameY="0" frameWidth="124" frameHeight="192"/>
+	<SubTexture name="menu_title0005" x="0" y="192" width="122" height="190" frameX="-2" frameY="0" frameWidth="124" frameHeight="192"/>
+</TextureAtlas>
