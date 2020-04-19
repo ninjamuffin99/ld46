@@ -26,6 +26,8 @@ class PlayState extends FlxState
 
 		FlxG.camera.follow(camFollow);
 
+		// FlxG.mouse.load("assets/images/cursor_idle.png");
+
 		super.create();
 	}
 
@@ -34,6 +36,12 @@ class PlayState extends FlxState
 		super.update(elapsed);
 
 		FlxG.watch.addMouse();
+
+		if (FlxG.mouse.justPressed)
+			FlxG.mouse.load("assets/images/cursor_grab.png");
+		if (FlxG.mouse.justReleased)
+			FlxG.mouse.load("assets/images/cursor_idle.png");
+			
 
 		var camSpeed:Float = 300;
 
