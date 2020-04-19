@@ -1,0 +1,35 @@
+{
+  "ogmoVersion": "3.3.0",
+  "width": 2560,
+  "height": 960,
+  "offsetX": 0,
+  "offsetY": 0,
+  "layers": [
+    {
+      "name": "entities",
+      "_eid": "27710027",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 320,
+      "gridCellsY": 120,
+      "entities": [
+        {"name": "water", "id": 3, "_eid": "27757994", "x": 768, "y": 504, "originX": 0, "originY": 0}
+      ]
+    },
+    {
+      "name": "bg",
+      "_eid": "27716353",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 320,
+      "gridCellsY": 120,
+      "entities": [
+        {"name": "BGlol", "id": 0, "_eid": "27720868", "x": 0, "y": 0, "originX": 0, "originY": 0}
+      ]
+    }
+  ]
+}

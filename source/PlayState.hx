@@ -1,5 +1,6 @@
 package;
 
+import flixel.addons.editors.ogmo.FlxOgmo3Loader;
 import flixel.math.FlxPoint;
 import flixel.FlxObject;
 import flixel.FlxG;
@@ -11,6 +12,9 @@ class PlayState extends FlxState
 	private var bg:FlxSprite;
 	private var camFollow:FlxObject;
 	public static var wholeSize:FlxPoint = FlxPoint.get();
+
+	var mapLoader:FlxOgmo3Loader;
+	
 	override public function create():Void
 	{
 		bg = new FlxSprite().loadGraphic(AssetPaths.hospital_ward_vector__png);
@@ -18,7 +22,7 @@ class PlayState extends FlxState
 		bg.updateHitbox();
 		bg.antialiasing = true;
 		add(bg);
-
+		
 		wholeSize.set(bg.width, bg.height);
 
 		camFollow = new FlxObject(0, 0, 2, 2);
@@ -28,14 +32,30 @@ class PlayState extends FlxState
 		var flower:Flower = new Flower(1100, 350);
 		add(flower);
 
-		var water:Water = new Water(900, 350);
-		add(water);
+		mapLoader = new FlxOgmo3Loader(AssetPaths.layout__ogmo, AssetPaths.layoutLevel__json);
+		mapLoader.loadEntities(placeEntities, "entities");
+		
 
 		FlxG.camera.follow(camFollow);
 
 		FlxG.mouse.load("assets/images/cursor_idle.png");
 
 		super.create();
+	}
+
+	function placeEntities(entity:EntityData)
+	{
+		var daName = entity.name;
+		trace(daName);
+		switch (daName)
+		{
+			case "water":
+				FlxG.log.add('water');
+				var water:Water = new Water(entity.x, entity.y);
+				add(water);
+			default:
+				trace('lol');
+		}
 	}
 
 	override public function update(elapsed:Float):Void
