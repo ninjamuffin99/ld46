@@ -16,7 +16,7 @@ class Draggable extends DaObject
     }
 
     private var mouseOffset:FlxPoint = FlxPoint.get();
-    private var mousePressing:Bool = false;
+    
     private var pressDown:Bool = false;
     override function update(elapsed:Float) {
         super.update(elapsed);

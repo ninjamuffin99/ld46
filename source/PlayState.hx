@@ -59,6 +59,9 @@ class PlayState extends FlxState
 				FlxG.log.add('water');
 				var water:Water = new Water(entity.x, entity.y);
 				grpObjects.add(water);
+			case 'patient':
+				var patient:Patient = new Patient(entity.x, entity.y);
+				grpObjects.add(patient);
 			default:
 				trace('lol');
 		}
@@ -96,7 +99,15 @@ class PlayState extends FlxState
 				}
 			});
 		}
-			
+		
+		grpObjects.forEach(function(obj:DaObject)
+		{
+			if (obj.mousePressing)
+			{
+				grpObjects.members.remove(obj);
+				grpObjects.members.push(obj);
+			}
+		});
 			
 
 		var camSpeed:Float = 300;
