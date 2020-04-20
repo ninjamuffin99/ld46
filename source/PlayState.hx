@@ -1,5 +1,6 @@
 package;
 
+import flixel.util.FlxColor;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.addons.editors.ogmo.FlxOgmo3Loader;
 import flixel.math.FlxPoint;
@@ -17,6 +18,9 @@ class PlayState extends FlxState
 	var mapLoader:FlxOgmo3Loader;
 
 	private var grpObjects:FlxTypedGroup<DaObject>;
+
+	public static var lightness:Float = 0;
+	private var blackShit:FlxSprite;
 	
 	override public function create():Void
 	{
@@ -46,6 +50,11 @@ class PlayState extends FlxState
 
 		FlxG.mouse.load("assets/images/cursor_idle.png");
 
+		blackShit = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
+		blackShit.scrollFactor.set();
+		add(blackShit);
+		blackShit.active = false;
+
 		super.create();
 	}
 
@@ -62,6 +71,9 @@ class PlayState extends FlxState
 			case 'patient':
 				var patient:Patient = new Patient(entity.x, entity.y);
 				grpObjects.add(patient);
+			case 'lightswitch':
+					var light:Lightswitch = new Lightswitch(entity.x, entity.y);
+					grpObjects.add(light);
 			default:
 				trace('lol');
 		}
@@ -71,6 +83,9 @@ class PlayState extends FlxState
 	override public function update(elapsed:Float):Void
 	{
 		super.update(elapsed);
+
+		blackShit.alpha = PlayState.lightness;
+
 
 		FlxG.watch.addMouse();
 

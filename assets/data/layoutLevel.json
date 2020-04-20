@@ -17,7 +17,8 @@
       "entities": [
         {"name": "water", "id": 3, "_eid": "27757994", "x": 768, "y": 504, "originX": 0, "originY": 0},
         {"name": "water", "id": 4, "_eid": "27757994", "x": 992, "y": 304, "originX": 0, "originY": 0},
-        {"name": "patient", "id": 5, "_eid": "34623853", "x": 8, "y": 416, "originX": 0, "originY": 0}
+        {"name": "patient", "id": 5, "_eid": "34623853", "x": 8, "y": 416, "originX": 0, "originY": 0},
+        {"name": "lightswitch", "id": 6, "_eid": "34839783", "x": 1592, "y": 288, "originX": 0, "originY": 0}
       ]
     },
     {

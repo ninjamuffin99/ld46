@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="lightswitch.png">
+	<!-- Created with Adobe Animate version 19.2.0.405 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="off0000" x="0" y="0" width="81" height="111"/>
+	<SubTexture name="on0000" x="0" y="111" width="81" height="111"/>
+</TextureAtlas>
