@@ -23,10 +23,10 @@ class Flower extends Interactable
         updateHitbox();
     }
 
-    override function interactWithObject(teehee:String) {
+    override function interactWithObject(teehee:DaObject) {
         super.interactWithObject(teehee);
 
-        switch(teehee)
+        switch(teehee.objType)
         {
             case 'water':
                 thirstiness = 4;

@@ -12,10 +12,7 @@ class DaObject extends FlxSprite
         super(x, y);
     }
 
-    public function interactWithObject(daOtherObject:String):Void
+    public function interactWithObject(daOtherObject:DaObject):Void
     {
-        trace('JUST INTERACTED WITH: ' + daOtherObject);
-
-        trace('this did interact!' + FlxG.random.int(0, 10));
     }
 }

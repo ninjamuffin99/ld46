@@ -38,7 +38,7 @@ class Draggable extends DaObject
         antialiasing = true;
     }
 
-    override function interactWithObject(teehee:String) {
+    override function interactWithObject(teehee:DaObject) {
         super.interactWithObject(teehee);
         isGrabbed = false;
     }

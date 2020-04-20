@@ -22,10 +22,10 @@ class Water extends Draggable
 
     }
 
-    override function interactWithObject(teehee:String) {
+    override function interactWithObject(teehee:DaObject) {
         super.interactWithObject(teehee);
 
-        switch (teehee)
+        switch (teehee.objType)
         {
             case 'flower':
                 isFull = false;
