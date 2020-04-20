@@ -83,13 +83,12 @@ class PlayState extends FlxState
 			{
 				if (obj.isGrabbed)
 				{
-					trace('this is gettin called?');
 					FlxG.overlap(obj, grpObjects, function(obj1, obj2)
 					{
 						if (!justInteracted)
 						{
-							trace('gets interacted with ' + obj);
-							obj.interactWithObject();
+							obj.interactWithObject(obj2.objType);
+							obj2.interactWithObject(obj.objType);
 							justInteracted = true;
 						}
 						

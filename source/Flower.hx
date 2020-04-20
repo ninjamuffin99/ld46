@@ -9,6 +9,8 @@ class Flower extends Interactable
     public function new(x:Float, y:Float) {
         super(x, y);
 
+        objType = 'flower';
+
         var tex = FlxAtlasFrames.fromSparrow(AssetPaths.flowerSpritesheet__png, AssetPaths.flowerSpritesheet__xml);
         frames = tex;
 
@@ -21,8 +23,16 @@ class Flower extends Interactable
         updateHitbox();
     }
 
-    override function interactWithObject() {
-        super.interactWithObject();
+    override function interactWithObject(teehee:String) {
+        super.interactWithObject(teehee);
+
+        switch(teehee)
+        {
+            case 'water':
+                thirstiness = 4;
+            default:
+                trace("no interaction for FLOWER and " + teehee);
+        }
 
         trace('log flower');
     }

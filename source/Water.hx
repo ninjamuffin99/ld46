@@ -10,6 +10,8 @@ class Water extends Draggable
     {
         super(x, y);
 
+        objType = 'water';
+
         var tex = FlxAtlasFrames.fromSparrow(AssetPaths.water__png, AssetPaths.water__xml);
         frames = tex;
 
@@ -20,8 +22,16 @@ class Water extends Draggable
 
     }
 
-    override function interactWithObject() {
-        super.interactWithObject();
+    override function interactWithObject(teehee:String) {
+        super.interactWithObject(teehee);
+
+        switch (teehee)
+        {
+            case 'flower':
+                isFull = false;
+            default:
+                trace('no interaction between WATER and ' + teehee);
+        }
 
         trace('water?');
     }
