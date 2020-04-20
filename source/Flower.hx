@@ -3,7 +3,7 @@ package;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.FlxSprite;
 
-class Flower extends FlxSprite
+class Flower extends Interactable
 {
     public var thirstiness:Float = 1;
     public function new(x:Float, y:Float) {
@@ -19,6 +19,12 @@ class Flower extends FlxSprite
 
         setGraphicSize(Std.int(width * 0.7));
         updateHitbox();
+    }
+
+    override function interactWithObject() {
+        super.interactWithObject();
+
+        trace('log flower');
     }
 
     var thristyCounter:Int = 0;

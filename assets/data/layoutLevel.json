@@ -15,7 +15,8 @@
       "gridCellsX": 320,
       "gridCellsY": 120,
       "entities": [
-        {"name": "water", "id": 3, "_eid": "27757994", "x": 768, "y": 504, "originX": 0, "originY": 0}
+        {"name": "water", "id": 3, "_eid": "27757994", "x": 768, "y": 504, "originX": 0, "originY": 0},
+        {"name": "water", "id": 4, "_eid": "27757994", "x": 992, "y": 304, "originX": 0, "originY": 0}
       ]
     },
     {

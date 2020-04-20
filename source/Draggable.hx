@@ -5,14 +5,14 @@ import flixel.math.FlxPoint;
 import flixel.FlxSprite;
 import flixel.FlxG;
 
-class Draggable extends FlxSprite
+class Draggable extends DaObject
 {
     public function new(x:Float, y:Float)
     {
         super(x, y);
 
         // call this after the update?
-        //FlxMouseEventManager.add(this, dragShit);
+        FlxMouseEventManager.add(this, dragShit);
     }
 
     private var mouseOffset:FlxPoint = FlxPoint.get();
@@ -25,7 +25,9 @@ class Draggable extends FlxSprite
         {
             this.x = FlxG.mouse.x - mouseOffset.x;
             this.y = FlxG.mouse.y - mouseOffset.y;
+            isGrabbed = true;
         }
+            
 
         if (FlxG.mouse.justReleased)
         {
@@ -34,6 +36,11 @@ class Draggable extends FlxSprite
         }
 
         antialiasing = true;
+    }
+
+    override function interactWithObject() {
+        super.interactWithObject();
+        isGrabbed = false;
     }
 
     private function dragShit(_)

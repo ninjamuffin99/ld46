@@ -1,5 +1,6 @@
 package;
 
+import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.addons.editors.ogmo.FlxOgmo3Loader;
 import flixel.math.FlxPoint;
 import flixel.FlxObject;
@@ -14,6 +15,8 @@ class PlayState extends FlxState
 	public static var wholeSize:FlxPoint = FlxPoint.get();
 
 	var mapLoader:FlxOgmo3Loader;
+
+	private var grpObjects:FlxTypedGroup<DaObject>;
 	
 	override public function create():Void
 	{
@@ -29,8 +32,11 @@ class PlayState extends FlxState
 		camFollow.screenCenter();
 		add(camFollow);
 
+		grpObjects = new FlxTypedGroup<DaObject>();
+		add(grpObjects);
+
 		var flower:Flower = new Flower(1100, 350);
-		add(flower);
+		grpObjects.add(flower);
 
 		mapLoader = new FlxOgmo3Loader(AssetPaths.layout__ogmo, AssetPaths.layoutLevel__json);
 		mapLoader.loadEntities(placeEntities, "entities");
@@ -52,22 +58,46 @@ class PlayState extends FlxState
 			case "water":
 				FlxG.log.add('water');
 				var water:Water = new Water(entity.x, entity.y);
-				add(water);
+				grpObjects.add(water);
 			default:
 				trace('lol');
 		}
 	}
 
+	private var justInteracted:Bool = false;
 	override public function update(elapsed:Float):Void
 	{
 		super.update(elapsed);
 
 		FlxG.watch.addMouse();
 
+		justInteracted = false;
+
 		if (FlxG.mouse.justPressed)
 			FlxG.mouse.load("assets/images/cursor_grab.png");
 		if (FlxG.mouse.justReleased)
+		{
 			FlxG.mouse.load("assets/images/cursor_idle.png");
+
+			grpObjects.forEach(function(obj:DaObject)
+			{
+				if (obj.isGrabbed)
+				{
+					trace('this is gettin called?');
+					FlxG.overlap(obj, grpObjects, function(obj1, obj2)
+					{
+						if (!justInteracted)
+						{
+							trace('gets interacted with ' + obj);
+							obj.interactWithObject();
+							justInteracted = true;
+						}
+						
+					});
+				}
+			});
+		}
+			
 			
 
 		var camSpeed:Float = 300;
@@ -82,5 +112,6 @@ class PlayState extends FlxState
 		}
 		else
 			camFollow.velocity.x = 0;
+		
 	}
 }

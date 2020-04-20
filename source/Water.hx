@@ -18,8 +18,12 @@ class Water extends Draggable
 
         animation.play('full');
 
-        FlxMouseEventManager.add(this, dragShit);
+    }
 
+    override function interactWithObject() {
+        super.interactWithObject();
+
+        trace('water?');
     }
 
     override function update(elapsed:Float) {
