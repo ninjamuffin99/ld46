@@ -4,9 +4,8 @@ import flixel.util.FlxColor;
 import flixel.FlxG;
 import flixel.graphics.frames.FlxAtlasFrames;
 
-class Lightswitch extends Clickable
+class Lightswitch extends Interactable
 {
-    private var isOn:Bool = true;
     public function new(x:Float, y:Float) {
         super(x, y);
 
@@ -17,6 +16,8 @@ class Lightswitch extends Clickable
         animation.addByPrefix('off', 'off');
 
         animation.play('on');
+
+        objType = 'lightswitch';
     }
 
     override function clicked() {

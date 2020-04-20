@@ -18,7 +18,5 @@ class Clickable extends DaObject
         }
     }
 
-    public function clicked() {
-        
-    }
+    
 }

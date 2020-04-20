@@ -46,7 +46,7 @@ class TitleState extends FlxState
     override function update(elapsed:Float) {
         super.update(elapsed);
 
-        if (FlxG.keys.justPressed.ONE)
+        if (FlxG.keys.justPressed.ONE || FlxG.keys.justPressed.NUMPADONE)
             FlxG.switchState(new PlayState());
     }
 }

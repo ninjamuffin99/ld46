@@ -19,6 +19,7 @@ class Water extends Draggable
 
         animation.play('full');
 
+        isFull = false;
     }
 
     override function interactWithObject(teehee:DaObject) {

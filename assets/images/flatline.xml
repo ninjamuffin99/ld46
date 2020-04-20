@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="flatline.png">
+	<!-- Created with Adobe Animate version 19.2.0.405 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="flatline0000" x="234" y="8" width="15" height="5" frameX="0" frameY="-27" frameWidth="161" frameHeight="65"/>
+	<SubTexture name="flatline0001" x="32" y="151" width="36" height="7" frameX="-1" frameY="-28" frameWidth="161" frameHeight="65"/>
+	<SubTexture name="flatline0002" x="32" y="143" width="66" height="8" frameX="-3" frameY="-28" frameWidth="161" frameHeight="65"/>
+	<SubTexture name="flatline0003" x="32" y="133" width="87" height="10" frameX="-5" frameY="-28" frameWidth="161" frameHeight="65"/>
+	<SubTexture name="flatline0004" x="131" y="92" width="123" height="38" frameX="-4" frameY="0" frameWidth="161" frameHeight="65"/>
+	<SubTexture name="flatline0005" x="0" y="92" width="131" height="41" frameX="-3" frameY="0" frameWidth="161" frameHeight="65"/>
+	<SubTexture name="flatline0006" x="0" y="0" width="157" height="46" frameX="-4" frameY="0" frameWidth="161" frameHeight="65"/>
+	<SubTexture name="flatline0007" x="0" y="46" width="133" height="46" frameX="-28" frameY="0" frameWidth="161" frameHeight="65"/>
+	<SubTexture name="flatline0008" x="133" y="46" width="106" height="46" frameX="-55" frameY="0" frameWidth="161" frameHeight="65"/>
+	<SubTexture name="flatline0009" x="157" y="0" width="77" height="46" frameX="-84" frameY="0" frameWidth="161" frameHeight="65"/>
+	<SubTexture name="flatline0010" x="131" y="130" width="77" height="46" frameX="-84" frameY="0" frameWidth="161" frameHeight="65"/>
+	<SubTexture name="flatline0011" x="208" y="130" width="34" height="33" frameX="-127" frameY="-13" frameWidth="161" frameHeight="65"/>
+	<SubTexture name="flatline0012" x="234" y="0" width="20" height="8" frameX="-141" frameY="-38" frameWidth="161" frameHeight="65"/>
+	<SubTexture name="flatline0013" x="0" y="133" width="32" height="29" frameX="-85" frameY="-36" frameWidth="161" frameHeight="65"/>
+	<SubTexture name="flatline0014" x="0" y="133" width="32" height="29" frameX="-85" frameY="-36" frameWidth="161" frameHeight="65"/>
+	<SubTexture name="flatline0015" x="0" y="133" width="32" height="29" frameX="-85" frameY="-36" frameWidth="161" frameHeight="65"/>
+	<SubTexture name="flatline0016" x="0" y="133" width="32" height="29" frameX="-85" frameY="-36" frameWidth="161" frameHeight="65"/>
+	<SubTexture name="flatline0017" x="0" y="133" width="32" height="29" frameX="-85" frameY="-36" frameWidth="161" frameHeight="65"/>
+	<SubTexture name="flatline0018" x="0" y="133" width="32" height="29" frameX="-85" frameY="-36" frameWidth="161" frameHeight="65"/>
+	<SubTexture name="flatline0019" x="0" y="133" width="32" height="29" frameX="-85" frameY="-36" frameWidth="161" frameHeight="65"/>
+	<SubTexture name="flatline0020" x="0" y="133" width="32" height="29" frameX="-85" frameY="-36" frameWidth="161" frameHeight="65"/>
+</TextureAtlas>

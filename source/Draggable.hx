@@ -7,12 +7,16 @@ import flixel.FlxG;
 
 class Draggable extends DaObject
 {
+    private var xLocked:Bool = false;
+    private var yLocked:Bool = false;
+
     public function new(x:Float, y:Float)
     {
         super(x, y);
 
         // call this after the update?
         FlxMouseEventManager.add(this, dragShit);
+        followsTrolly = true;
     }
 
     private var mouseOffset:FlxPoint = FlxPoint.get();
@@ -23,8 +27,10 @@ class Draggable extends DaObject
 
         if (mousePressing && FlxG.mouse.x >= 0 && FlxG.mouse.x <= PlayState.wholeSize.x && FlxG.mouse.y >= 0 && FlxG.mouse.y <= PlayState.wholeSize.y)
         {
-            this.x = FlxG.mouse.x - mouseOffset.x;
-            this.y = FlxG.mouse.y - mouseOffset.y;
+            if (!xLocked)
+                this.x = FlxG.mouse.x - mouseOffset.x;
+            if (!yLocked)
+                this.y = FlxG.mouse.y - mouseOffset.y;
             isGrabbed = true;
         }
             

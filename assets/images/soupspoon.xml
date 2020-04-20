@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="soupspoon.png">
+	<!-- Created with Adobe Animate version 19.2.0.405 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="spoon10000" x="0" y="0" width="90" height="37"/>
+	<SubTexture name="full0001" x="0" y="37" width="90" height="37"/>
+</TextureAtlas>

@@ -17,6 +17,7 @@ class Flower extends Interactable
 
         animation.addByPrefix('idle', 'flower idle', 24);
         animation.addByPrefix('thirsty', 'Symbol 1', 24);
+        animation.addByPrefix('drinkin', 'Symbol 2', 24, false);
         animation.play('idle');
         antialiasing = true;
 
@@ -65,5 +66,7 @@ class Flower extends Interactable
         {
             animation.play('thirsty');
         }
+        
+        
     }
 }

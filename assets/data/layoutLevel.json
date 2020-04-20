@@ -15,10 +15,17 @@
       "gridCellsX": 320,
       "gridCellsY": 120,
       "entities": [
-        {"name": "water", "id": 3, "_eid": "27757994", "x": 768, "y": 504, "originX": 0, "originY": 0},
-        {"name": "water", "id": 4, "_eid": "27757994", "x": 992, "y": 304, "originX": 0, "originY": 0},
+        {"name": "water", "id": 3, "_eid": "27757994", "x": 1136, "y": 48, "originX": 0, "originY": 0},
         {"name": "patient", "id": 5, "_eid": "34623853", "x": 8, "y": 416, "originX": 0, "originY": 0},
-        {"name": "lightswitch", "id": 6, "_eid": "34839783", "x": 1592, "y": 288, "originX": 0, "originY": 0}
+        {"name": "lightswitch", "id": 6, "_eid": "34839783", "x": 1592, "y": 288, "originX": 0, "originY": 0},
+        {"name": "flatline", "id": 7, "_eid": "35936473", "x": 284, "y": 95.5, "originX": 0, "originY": 0},
+        {"name": "faucet", "id": 8, "_eid": "36052569", "x": 1297, "y": 367, "originX": 0, "originY": 0},
+        {"name": "troll", "id": 9, "_eid": "41172373", "x": 1616, "y": 576, "originX": 0, "originY": 0},
+        {"name": "soup", "id": 10, "_eid": "41628529", "x": 1704, "y": 632, "originX": 0, "originY": 0},
+        {"name": "pill2", "id": 11, "_eid": "41620137", "x": 1928, "y": 784, "originX": 0, "originY": 0},
+        {"name": "pill1", "id": 12, "_eid": "41622699", "x": 1952, "y": 744, "originX": 0, "originY": 0},
+        {"name": "pillBottle", "id": 13, "_eid": "41628395", "x": 1840, "y": 728, "originX": 0, "originY": 0},
+        {"name": "spoon", "id": 14, "_eid": "41627204", "x": 1832, "y": 616, "originX": 0, "originY": 0}
       ]
     },
     {
