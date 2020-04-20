@@ -5,7 +5,6 @@ import flixel.graphics.frames.FlxAtlasFrames;
 
 class Water extends Draggable
 {
-    public var isFull:Bool = true;
     public function new(x:Float, y:Float)
     {
         super(x, y);
@@ -28,7 +27,7 @@ class Water extends Draggable
         switch (teehee.objType)
         {
             case 'flower':
-                isFull = false;
+                trace('derp!');
             default:
                 trace('no interaction between WATER and ' + teehee);
         }

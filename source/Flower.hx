@@ -1,11 +1,12 @@
 package;
 
+import flixel.FlxG;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.FlxSprite;
 
 class Flower extends Interactable
 {
-    public var thirstiness:Float = 1;
+    public var thirstiness:Float = 1.5;
     public function new(x:Float, y:Float) {
         super(x, y);
 
@@ -29,7 +30,12 @@ class Flower extends Interactable
         switch(teehee.objType)
         {
             case 'water':
-                thirstiness = 4;
+                if (teehee.isFull)
+                {
+                    trace('FLOWER GOT WATER??');
+                    thirstiness = 1.5;
+                    teehee.isFull = false;
+                }
             default:
                 trace("no interaction for FLOWER and " + teehee);
         }
@@ -41,9 +47,11 @@ class Flower extends Interactable
     override function update(elapsed:Float) {
         super.update(elapsed);
 
+        FlxG.watch.addQuick('thirsty', thirstiness);
+
         thristyCounter++;
 
-        if (thristyCounter >= 60)
+        if (thristyCounter >= 60 && thirstiness > 0)
         {
             thristyCounter = 0;
             thirstiness -= 0.05;

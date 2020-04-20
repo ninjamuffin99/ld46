@@ -87,8 +87,8 @@ class PlayState extends FlxState
 					{
 						if (!justInteracted)
 						{
-							obj.interactWithObject(obj2.objType);
-							obj2.interactWithObject(obj.objType);
+							obj.interactWithObject(obj2);
+							obj2.interactWithObject(obj);
 							justInteracted = true;
 						}
 						
